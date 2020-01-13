@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,21 +9,28 @@
 </head>
 <body>
     <div id="app">
-        <p>{{mensagem}}</p>
-        <p> Nome: {{nome}}</p>
-        <input v-on:input="mudarNome">
+        <button v-on:click="incrementar">Clique</button>
+        <p>Cliques: {{ cliques }}</p>
+        <p v-on:mousemove="atualizarCoordenadas">Coordenadas x: {{x}} e y: {{ y }}</p>
     </div>
 
     <script type="text/javascript">
         new Vue({
             el: '#app',
             data: {
-                mensagem: 'Olá',
-                nome: ''
+                cliques: 0,
+                x: 0,
+                y: 0
             },
             methods: {
-                mudarNome: function(event) {
-                    this.nome = event.target.value
+                incrementar: function(e) {
+                    console.log(e);
+                    
+                    this.cliques++;
+                },
+                atualizarCoordenadas: function(e) {
+                    this.x = e.clientX;
+                    this.y = e.clientY;
                 }
             }
         });
