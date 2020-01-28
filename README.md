@@ -3,7 +3,7 @@ Repositório destinado ao estudo de VueJS com o curso https://www.udemy.com/cour
 
 ## Utilizando variável e função (definidas no Vue) no HTML
 <strong> Entre tags HTML </strong>: Utilizar entre {{ }}. {{ nomeVariavel }} ou {{ nomeFuncao() }}<br>
-<strong> Em propriedade de tag:</strong> <xmp><code><a v-bind:href="nomeVariavel"> Link </a></code></xmp> para valor mutável e <xmp><code><span v-text="nomeVariavel"></span></code></xmp> para valor imutável
+<strong> Em propriedade de tag:</strong> <pre><code><a v-bind:href="nomeVariavel"> Link </a></code></pre> para valor mutável e <pre><code><span v-text="nomeVariavel"></span></code></pre> para valor imutável
 
 ## Computed Properties vs Methods vs Watchers
 <strong>Computed Properties:</strong> só será reavaliada (recarregada) caso algum objeto utilizado dentro dela seja atualizado, logo, é indicada para a maioria dos casos.<br>
