@@ -22,6 +22,9 @@ Repositório destinado ao estudo de VueJS com o curso https://www.udemy.com/cour
 ## v-if vs v-show
 É possível tanto ocultar quanto não renderizar uma tag. Visualmente essas diretivas possuem a mesma ideia, não mostrar ao usuário uma tag e seu conteúdo, no entanto é preciso saber quando utilizar cada uma.
 <ul>
-    <li><strong>v-if:</strong> Só renderiza caso seja verdadeiro, caso contrário a tag não é inserida no HTML</li>
-    <li><strong>v-show:</strong>Independente do valor booleano a tag é renderizada e só depois é avaliado se a tag deve permanecer ou ser removida do HTML</li>
+    <li><strong>v-if:</strong> Só renderiza caso seja verdadeiro, caso contrário a tag não é inserida no HTML. Exemplo de uso: <code>&#60;span v-if="variavelBooleana"&#62;Conteúdo&#60;/span&#62;</code></li>
+    <li><strong>v-show:</strong>Independente do valor booleano a tag é renderizada e só depois é avaliado se a tag deve permanecer ou ser removida do HTML. Exemplo: <code>&#60;span v-show="variavelBooleana"&#62;Conte&#250;do&#60;/span&#62;</code></li>
 </ul>
+
+## v-for
+Iterando array com v-for: 
